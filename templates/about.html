@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sławomir Śpiewak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Nice to meet you!</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="https://github.com/Salvek" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/s%C5%82awomir-%C5%9Bpiewak-652214218" target="_blank">LinkedIn</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div class="container1">
+        <strong><nav>
+          <ul class="menu">
+            <img src="static/ja.jpg" alt="Hi! It's me!">
+            <h3 class="text">Hello!</h3>
+            <h3>I am Slawek, I come from Silesia from Bielsko-Biala to be exact, where I attended the KEN high school No. 4, in the profile mathematics-physics-informatics.</h3>
+            <h3>I am currently stationed in Katowice and am a second-year student at the University of Economics in Katowice majoring in Computer Science with a specialization in Algorithmics and Programming.</h3>
+            <h3>I am keen on self-development in the IT industry, especially in the programming and database area.</h3>
+            <h3>I am a creative, energetic, dutiful and punctual person.</h3>
+            <h3>I love sports, motorization and IT news.</h3>
+          </ul>
+        </nav></strong>
+      </div>
+    </body>
+</html>

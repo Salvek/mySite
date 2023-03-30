@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sławomir Śpiewak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Welcome to my site!</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="/about">About me</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  <div class="container1">
+        <strong><nav>
+          <ul class="menu">
+            <h2><a href="/projects">MY PROJECTS</a></h2>
+          </ul>
+        </nav></strong>
+      </div>
+  </body>
+</html>

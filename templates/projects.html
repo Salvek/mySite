@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sławomir Śpiewak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">This is the section for my projects</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  <div class="container2">
+        <strong><nav>
+          <ul class="menu">
+            <img src="static/pythonxflask.jpg" alt="" style="width:240px;height:80px;">
+            <h2><a href="https://github.com/KamSaf/kochamyJave-project" target="_blank">Project to study in collaboration with KamSaf</a></h2>
+          </ul>
+        </nav></strong>
+      </div>
+  </body>
+</html>
